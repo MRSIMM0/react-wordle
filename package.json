@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://mrsimm0.github.io/react-wordle",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -9,7 +10,6 @@
     "@types/jest": "^27.5.2",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
-    "fs": "^0.0.1-security",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-jss": "^10.9.2",
@@ -18,10 +18,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +46,7 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^18.11.17",
-    "gh-pages": "^4.0.0"
+    "@types/node": "^18.11.17"
   }
+
 }

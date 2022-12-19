@@ -9,7 +9,7 @@ import Lose from "./messages/Lose";
 async function getRandomLine() {
   let line = "";
 
-  await fetch("/words.txt")
+  await fetch("https://mrsimm0.github.io/react-wordle/words.txt")
     .then((res: any) => res.text())
     .then((body: any) => {
       const lines = body.split("\n");
