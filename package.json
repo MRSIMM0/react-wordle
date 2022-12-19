@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^18.11.17"
+    "@types/node": "^18.11.17",
+    "gh-pages": "^4.0.0"
   }
 }
